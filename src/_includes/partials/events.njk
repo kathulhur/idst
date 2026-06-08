@@ -1,0 +1,18 @@
+<section class="section events" id="events">
+  <div class="members-head" style="text-align:left;margin-left:0;max-width:none">
+    <span class="eyebrow reveal">{{ idst.events.eyebrow }}</span>
+    <h2 class="display reveal d1" style="font-size:clamp(38px,6vw,78px);margin-top:20px">{{ idst.events.heading }}</h2>
+  </div>
+  <div class="wrap reveal d2" style="margin-top:40px">
+    {% for event in idst.events.items %}
+    <div class="event-row">
+      <div class="event-date"><b>{{ event.day }}</b><span>{{ event.month }} {{ event.year }}</span></div>
+      <div>
+        <div class="event-name">{{ event.name }}</div>
+        <div class="event-loc">{{ event.location }}</div>
+      </div>
+      <div class="event-cat">{{ event.category }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

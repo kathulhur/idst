@@ -1,0 +1,253 @@
+{
+  "site": {
+    "name": "IDST",
+    "fullName": "Infanta Dance Sports Team",
+    "tagline": "Infanta Dance Sports",
+    "established": "2015",
+    "location": "Infanta, Quezon, Philippines",
+    "discipline": "Ballroom & Latin DanceSport"
+  },
+  "nav": {
+    "brand": { "monogram": "ID", "title": "IDST", "subtitle": "Infanta Dance Sports" },
+    "links": [
+      { "label": "Our Story", "href": "#story" },
+      { "label": "Members", "href": "#members" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Events", "href": "#events" }
+    ],
+    "cta": { "label": "Join the Team", "href": "#join" }
+  },
+  "hero": {
+    "establishedLine": "Est. 2015 · Infanta, Quezon",
+    "title": "Infanta Dance Sports Team",
+    "subtitle": "Where humble beginnings meet world-class rhythm — a story written in steps, sweat, and standing ovations.",
+    "actions": [
+      { "label": "Our Story", "href": "#story", "style": "primary" },
+      { "label": "Meet the Team", "href": "#members", "style": "ghost" }
+    ],
+    "image": "/assets/img/hero.png",
+    "medallionImage": "/assets/img/s1.png",
+    "kineticMarquee": [
+      "Infanta · DanceSport · Passion ·",
+      "Rhythm · Discipline · Grace ·"
+    ]
+  },
+  "story": {
+    "eyebrow": "From the ground up",
+    "heading": "Humble beginnings, relentless heart.",
+    "lead": "It began with a former athlete, a borrowed studio, and a handful of students who refused to sit still.",
+    "timeline": [
+      {
+        "year": "2015",
+        "title": "The First Steps",
+        "body": "Sir Wilmer Vargas — once a DanceSport athlete himself — gathered a small group of dancers to represent Infanta National High School. No banners, no budget. Just a count of eight and a dream."
+      },
+      {
+        "year": "2017",
+        "title": "A Name of Our Own",
+        "body": "The little school squad grew into something bigger than any single classroom — and the Infanta Dance Sports Team was born, an identity the dancers could call home."
+      },
+      {
+        "year": "2019",
+        "title": "Beyond the Province",
+        "body": "First regional floors, first trophies, first taste of what discipline could build. The team began turning heads far outside of Infanta."
+      },
+      {
+        "year": "2022",
+        "title": "On the National Stage",
+        "body": "IDST started competing nationwide, trading local gymnasiums for championship ballrooms — and proving a small-town team could hold its own among the country's best."
+      },
+      {
+        "year": "2024",
+        "title": "World-Class Mentors",
+        "body": "The team earned the chance to train alongside globally recognized athletes — lessons that reshaped technique, posture, and ambition for every dancer on the floor."
+      },
+      {
+        "year": "Today",
+        "title": "The Legacy Continues",
+        "body": "Alumni now carry the IDST spirit into colleges across the country, still competing, still thriving — proof that what starts in Infanta never really stops dancing."
+      }
+    ],
+    "photoBand": [
+      { "caption": "Early days", "image": "/assets/img/l1.png" },
+      { "caption": "On the floor", "image": "/assets/img/l2.png" },
+      { "caption": "Champions", "image": "/assets/img/l3.png" }
+    ]
+  },
+  "quote": {
+    "text": "We didn't start with trophies. We started with passion — everything else, we earned.",
+    "attribution": "The IDST family"
+  },
+  "achievements": [
+    { "value": 10, "suffix": "+", "label": "Years Strong" },
+    { "value": 120, "suffix": "+", "label": "Podium Finishes" },
+    { "value": 40, "suffix": "+", "label": "Competitions" },
+    { "value": 25, "suffix": "+", "label": "Alumni Still Competing" }
+  ],
+  "members": {
+    "eyebrow": "The people behind the passion",
+    "heading": "Meet the family",
+    "description": "Coaches who light the way, dancers writing today's chapter, and alumni who never stopped moving.",
+    "instructors": [
+      {
+        "name": "Sir Wilmer Vargas",
+        "role": "Founder · Head Coach",
+        "specialty": "Former DanceSport Athlete",
+        "badge": "Founder",
+        "image": "/assets/img/p1.png"
+      },
+      {
+        "name": "Ma'am Liza Soriano",
+        "role": "Latin Technique Coach",
+        "specialty": "Cha-cha · Rumba · Jive",
+        "image": "/assets/img/p2.png"
+      },
+      {
+        "name": "Coach Marco Delfin",
+        "role": "Standard Coach",
+        "specialty": "Waltz · Tango · Quickstep",
+        "image": "/assets/img/p3.png"
+      }
+    ],
+    "current": [
+      { "name": "Andrei Bautista", "role": "Latin", "specialty": "Cha-cha · Samba", "image": "/assets/img/p2.png" },
+      { "name": "Kyla Mendoza", "role": "Standard", "specialty": "Waltz · Foxtrot", "image": "/assets/img/p3.png" },
+      { "name": "Jericho Ramos", "role": "Latin", "specialty": "Paso Doble", "image": "/assets/img/p4.png" },
+      { "name": "Bea Villanueva", "role": "Latin", "specialty": "Rumba · Jive", "image": "/assets/img/p5.png" },
+      { "name": "Nathaniel Cruz", "role": "Standard", "specialty": "Tango · Viennese", "image": "/assets/img/p6.png" },
+      { "name": "Mariella Aquino", "role": "Latin", "specialty": "Samba · Cha-cha", "image": "/assets/img/p1.png" },
+      { "name": "Paolo Gutierrez", "role": "Ten-Dance", "specialty": "All-rounder", "image": "/assets/img/p2.png" },
+      { "name": "Trisha Domingo", "role": "Standard", "specialty": "Quickstep", "image": "/assets/img/p3.png" },
+      { "name": "Rafael Santos", "role": "Latin", "specialty": "Jive · Paso", "image": "/assets/img/p4.png" },
+      { "name": "Camille Reyes", "role": "Latin", "specialty": "Rumba", "image": "/assets/img/p5.png" },
+      { "name": "Joshua Fernandez", "role": "Standard", "specialty": "Slow Foxtrot", "image": "/assets/img/p6.png" },
+      { "name": "Erika Lualhati", "role": "Latin", "specialty": "Cha-cha · Samba", "image": "/assets/img/p1.png" },
+      { "name": "Daniel Pascual", "role": "Standard", "specialty": "Waltz · Tango", "image": "/assets/img/p2.png" },
+      { "name": "Sofia Caballero", "role": "Latin", "specialty": "Jive", "image": "/assets/img/p3.png" },
+      { "name": "Miguel Torres", "role": "Ten-Dance", "specialty": "All-rounder", "image": "/assets/img/p4.png" },
+      { "name": "Hannah Ocampo", "role": "Standard", "specialty": "Viennese Waltz", "image": "/assets/img/p5.png" }
+    ],
+    "alumni": [
+      { "name": "Carlo Magsino", "affiliation": "UP Diliman", "note": "Still competing", "image": "/assets/img/p4.png" },
+      { "name": "Patricia Lim", "affiliation": "Ateneo", "note": "Varsity DanceSport", "image": "/assets/img/p5.png" },
+      { "name": "Reymart Ignacio", "affiliation": "UST", "note": "National qualifier", "image": "/assets/img/p6.png" },
+      { "name": "Angeline Robles", "affiliation": "DLSU", "note": "Latin specialist", "image": "/assets/img/p1.png" },
+      { "name": "Vince Capili", "affiliation": "PUP", "note": "Coach in training", "image": "/assets/img/p2.png" },
+      { "name": "Denise Aguilar", "affiliation": "FEU", "note": "Standard", "image": "/assets/img/p3.png" },
+      { "name": "Lorenzo Bides", "affiliation": "Mapúa", "note": "Ten-Dance", "image": "/assets/img/p4.png" },
+      { "name": "Karla Espino", "affiliation": "UE", "note": "Choreographer", "image": "/assets/img/p5.png" },
+      { "name": "Francis Yatco", "affiliation": "CEU", "note": "Latin", "image": "/assets/img/p6.png" },
+      { "name": "Monica Salud", "affiliation": "NU", "note": "Standard", "image": "/assets/img/p1.png" }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Moments on the floor",
+    "heading": "In motion",
+    "images": [
+      { "id": "gal-1", "size": "large", "image": "/assets/img/l4.png" },
+      { "id": "gal-2", "size": "small", "image": "/assets/img/p5.png" },
+      { "id": "gal-3", "size": "small", "image": "/assets/img/p6.png" },
+      { "id": "gal-4", "size": "tall",  "image": "/assets/img/t1.png" },
+      { "id": "gal-5", "size": "small", "image": "/assets/img/p1.png" },
+      { "id": "gal-6", "size": "wide",  "image": "/assets/img/l5.png" },
+      { "id": "gal-7", "size": "small", "image": "/assets/img/t2.png" }
+    ]
+  },
+  "events": {
+    "eyebrow": "What's next",
+    "heading": "Upcoming performances",
+    "items": [
+      {
+        "day": "14",
+        "month": "Jul",
+        "year": "2026",
+        "name": "Provincial DanceSport Championships",
+        "location": "Quezon Convention Center · Lucena City",
+        "category": "Latin · Standard"
+      },
+      {
+        "day": "22",
+        "month": "Aug",
+        "year": "2026",
+        "name": "IDST Showcase Night",
+        "location": "Infanta Town Plaza · Infanta, Quezon",
+        "category": "Exhibition"
+      },
+      {
+        "day": "05",
+        "month": "Oct",
+        "year": "2026",
+        "name": "National Open DanceSport Series",
+        "location": "Manila · PhilSports Arena",
+        "category": "National"
+      },
+      {
+        "day": "12",
+        "month": "Dec",
+        "year": "2026",
+        "name": "Year-End Gala & Alumni Reunion",
+        "location": "Infanta, Quezon",
+        "category": "Gala"
+      }
+    ]
+  },
+  "join": {
+    "eyebrow": "No experience required — only heart",
+    "heading": "Your first eight count starts here.",
+    "body": "Whether you've never set foot on a dance floor or you're chasing a national title, there's a place for you in the IDST family. Trainings are open to students and the community alike.",
+    "actions": [
+      { "label": "Become a Member", "href": "#contact", "style": "primary" },
+      { "label": "Watch Us Perform", "href": "#events", "style": "ghost" }
+    ]
+  },
+  "sponsors": {
+    "eyebrow": "With the support of",
+    "items": [
+      "Infanta NHS",
+      "LGU Infanta",
+      "Quezon Sports Council",
+      "Your Brand Here",
+      "Become a Patron"
+    ]
+  },
+  "footer": {
+    "brand": "IDST",
+    "tagline": "Infanta Dance Sports Team — dancing from a small town toward the national stage, one count of eight at a time.",
+    "columns": [
+      {
+        "heading": "Explore",
+        "links": [
+          { "label": "Our Story", "href": "#story" },
+          { "label": "Members", "href": "#members" },
+          { "label": "Gallery", "href": "#gallery" },
+          { "label": "Events", "href": "#events" }
+        ]
+      },
+      {
+        "heading": "Get Involved",
+        "links": [
+          { "label": "Join the Team", "href": "#join" },
+          { "label": "Become a Sponsor", "href": "#sponsors" },
+          { "label": "Book a Performance", "href": "#events" },
+          { "label": "Volunteer", "href": "#contact" }
+        ]
+      },
+      {
+        "heading": "Reach Us",
+        "links": [
+          { "label": "Infanta, Quezon, PH", "href": "#" },
+          { "label": "idst.team@email.com", "href": "#" },
+          { "label": "+63 9XX XXX XXXX", "href": "#" }
+        ]
+      }
+    ],
+    "socials": [
+      { "platform": "Facebook", "href": "#" },
+      { "platform": "Instagram", "href": "#" },
+      { "platform": "TikTok", "href": "#" },
+      { "platform": "YouTube", "href": "#" }
+    ],
+    "copyright": "© 2026 Infanta Dance Sports Team. All rights reserved.",
+    "credit": "Built with passion in Infanta, Quezon."
+  }
+}

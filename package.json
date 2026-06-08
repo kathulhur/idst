@@ -1,0 +1,11 @@
+{
+  "name": "idst",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ELEVENTY_ENV=development eleventy --serve --watch",
+    "build": "ELEVENTY_ENV=production eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

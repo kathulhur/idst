@@ -1,0 +1,65 @@
+<section class="section members" id="members">
+  <div class="members-head">
+    <span class="eyebrow center reveal">{{ idst.members.eyebrow }}</span>
+    <h2 class="display reveal d1">{{ idst.members.heading }}</h2>
+    <p class="reveal d2">{{ idst.members.description }}</p>
+  </div>
+
+  <div class="tabs reveal">
+    <button class="tab active" data-tab="instructors">Instructors</button>
+    <button class="tab" data-tab="current">Current Members <span style="opacity:.6">&nbsp;{{ idst.members.current | length }}</span></button>
+    <button class="tab" data-tab="alumni">Alumni <span style="opacity:.6">&nbsp;{{ idst.members.alumni | length }}</span></button>
+  </div>
+
+  <div class="tab-panel active" id="panel-instructors">
+    <div class="member-grid grid-instructors">
+      {% for m in idst.members.instructors %}
+      <div class="m-card reveal featured">
+        <div class="m-photo">
+          {% if m.badge %}<span class="m-corner">{{ m.badge }}</span>{% endif %}
+          <img src="{{ m.image }}" alt="{{ m.name }}" loading="lazy" />
+        </div>
+        <div class="m-meta">
+          <div class="m-name">{{ m.name }}</div>
+          <div class="m-role">{{ m.role }}</div>
+          {% if m.specialty %}<span class="m-tag">{{ m.specialty }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="tab-panel" id="panel-current">
+    <div class="member-grid grid-members">
+      {% for m in idst.members.current %}
+      <div class="m-card reveal">
+        <div class="m-photo">
+          <img src="{{ m.image }}" alt="{{ m.name }}" loading="lazy" />
+        </div>
+        <div class="m-meta">
+          <div class="m-name">{{ m.name }}</div>
+          <div class="m-role">{{ m.role }}</div>
+          {% if m.specialty %}<span class="m-tag">{{ m.specialty }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="tab-panel" id="panel-alumni">
+    <div class="member-grid grid-members">
+      {% for m in idst.members.alumni %}
+      <div class="m-card reveal">
+        <div class="m-photo">
+          <img src="{{ m.image }}" alt="{{ m.name }}" loading="lazy" />
+        </div>
+        <div class="m-meta">
+          <div class="m-name">{{ m.name }}</div>
+          <div class="m-role">Alumni · {{ m.affiliation }}</div>
+          {% if m.note %}<span class="m-tag">{{ m.note }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

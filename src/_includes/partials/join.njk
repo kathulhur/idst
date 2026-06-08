@@ -1,0 +1,12 @@
+<section class="section join" id="join">
+  <span class="eyebrow center reveal">{{ idst.join.eyebrow }}</span>
+  <h2 class="reveal d1" style="margin-top:26px">Your first <em>eight count</em><br />starts here.</h2>
+  <p class="reveal d2">{{ idst.join.body }}</p>
+  <div class="hero-actions reveal d3">
+    {% for action in idst.join.actions %}
+    <a class="btn btn-{{ action.style }}" href="{{ action.href }}">
+      {{ action.label }}{% if action.style == "primary" %} <span class="arr">&rarr;</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>

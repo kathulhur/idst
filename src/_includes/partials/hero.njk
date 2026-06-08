@@ -1,0 +1,37 @@
+<header class="hero" id="top">
+  <div class="hero-photo">
+    <div class="ken" style="position:absolute;inset:0">
+      <img src="{{ idst.hero.image }}" alt="{{ idst.site.fullName }}" />
+    </div>
+  </div>
+  <div class="hero-vignette"></div>
+  <div class="hero-grain"></div>
+
+  <div class="hero-marquee m1">
+    <span>{{ idst.hero.kineticMarquee[0] }}&nbsp;</span>
+    <span>{{ idst.hero.kineticMarquee[0] }}&nbsp;</span>
+  </div>
+  <div class="hero-marquee m2">
+    <span>{{ idst.hero.kineticMarquee[1] }}&nbsp;</span>
+    <span>{{ idst.hero.kineticMarquee[1] }}&nbsp;</span>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-medallion reveal-zoom in">
+      <img src="{{ idst.hero.medallionImage }}" alt="{{ idst.site.fullName }}" />
+    </div>
+    <div class="hero-est reveal in">{{ idst.hero.establishedLine }}</div>
+    <span class="hero-rule"></span>
+    <h1 class="hero-title reveal d1 in">Infanta<br />Dance Sports<br />Team</h1>
+    <p class="hero-sub reveal d2 in">{{ idst.hero.subtitle }}</p>
+    <div class="hero-actions reveal d3 in">
+      {% for action in idst.hero.actions %}
+      <a class="btn btn-{{ action.style }}" href="{{ action.href }}">
+        {{ action.label }}{% if action.style == "primary" %} <span class="arr">&rarr;</span>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</header>

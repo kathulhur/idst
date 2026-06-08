@@ -1,0 +1,11 @@
+<section class="section" id="gallery" style="background:var(--ink-2)">
+  <div class="members-head">
+    <span class="eyebrow center reveal">{{ idst.gallery.eyebrow }}</span>
+    <h2 class="display reveal d1">{{ idst.gallery.heading }}</h2>
+  </div>
+  <div class="gallery-grid">
+    {% for img in idst.gallery.images %}
+    <img class="{{ img.size | galClass }}" src="{{ img.image }}" alt="Gallery photo {{ loop.index }}" loading="lazy" />
+    {% endfor %}
+  </div>
+</section>

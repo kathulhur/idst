@@ -1,0 +1,14 @@
+<section class="section stats" style="padding-top:clamp(72px,9vh,120px);padding-bottom:clamp(60px,8vh,100px)">
+  <div class="members-head" style="margin-bottom:clamp(48px,6vh,72px)">
+    <span class="eyebrow center reveal">Every routine starts on a count</span>
+    <h2 class="display reveal d1"><span class="serif-it">4 and 1, 2, 3…</span></h2>
+  </div>
+  <div class="stats-grid">
+    {% for stat in idst.achievements %}
+    <div class="stat reveal{% if loop.index > 1 %} d{{ loop.index - 1 }}{% endif %}">
+      <div class="stat-num" data-count="{{ stat.value }}">0<span class="suf">{{ stat.suffix }}</span></div>
+      <div class="stat-label">{{ stat.label }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

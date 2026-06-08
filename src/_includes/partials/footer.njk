@@ -1,0 +1,41 @@
+{% macro socialIcon(platform) %}
+  {% if platform == "Facebook" %}
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+  {% elif platform == "Instagram" %}
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  {% elif platform == "TikTok" %}
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.6 3.6 3.9v2.6c-1.3 0-2.6-.4-3.6-1.1v6.1c0 3-2.4 5.5-5.4 5.5S5.2 17.5 5.2 14.5 7.6 9 10.6 9c.3 0 .6 0 .9.1v2.7c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.8-1.2 2.8-2.7V3H16z"/></svg>
+  {% elif platform == "YouTube" %}
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.3-.4-4.8c-.2-.9-.9-1.5-1.7-1.7C19.4 5 12 5 12 5s-7.4 0-8.9.5c-.8.2-1.5.8-1.7 1.7C1 8.7 1 12 1 12s0 3.3.4 4.8c.2.9.9 1.5 1.7 1.7C4.6 19 12 19 12 19s7.4 0 8.9-.5c.8-.2 1.5-.8 1.7-1.7.4-1.5.4-4.8.4-4.8zM9.8 15V9l5.2 3-5.2 3z"/></svg>
+  {% endif %}
+{% endmacro %}
+
+<footer class="footer" id="contact">
+  <div class="footer-grid">
+    <div>
+      <h3 class="display">{{ idst.footer.brand }}</h3>
+      <p class="f-tag">{{ idst.footer.tagline }}</p>
+    </div>
+    {% for col in idst.footer.columns %}
+    <div>
+      <h5>{{ col.heading }}</h5>
+      <ul>
+        {% for link in col.links %}
+        <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+      {% if loop.last %}
+      <div class="socials" style="margin-top:18px">
+        {% for s in idst.footer.socials %}
+        <a href="{{ s.href }}" aria-label="{{ s.platform }}">{{ socialIcon(s.platform) }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  <div class="footer-bottom">
+    <small>&copy; {{ "" | currentYear }} {{ idst.site.fullName }}. All rights reserved.</small>
+    <small>{{ idst.footer.credit }}</small>
+  </div>
+</footer>

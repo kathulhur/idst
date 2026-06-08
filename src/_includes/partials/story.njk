@@ -1,0 +1,23 @@
+<section class="section story" id="story">
+  <div class="story-head">
+    <span class="eyebrow center reveal">{{ idst.story.eyebrow }}</span>
+    <h2 class="display reveal d1">Humble beginnings,<br /><span class="serif-it">relentless</span> heart.</h2>
+    <p class="lead reveal d2">{{ idst.story.lead }}</p>
+  </div>
+
+  <div class="timeline">
+    {% for item in idst.story.timeline %}
+    <div class="tl-item {{ 'right' if loop.index % 2 == 1 else 'left' }}">
+      <div class="tl-year reveal">{{ item.year }}</div>
+      <h3 class="tl-title reveal d1">{{ item.title }}</h3>
+      <p class="tl-body reveal d2">{{ item.body }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="story-band">
+    {% for photo in idst.story.photoBand %}
+    <img src="{{ photo.image }}" alt="{{ photo.caption }}" loading="lazy" />
+    {% endfor %}
+  </div>
+</section>

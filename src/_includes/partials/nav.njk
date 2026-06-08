@@ -1,0 +1,12 @@
+<nav class="nav">
+  <a class="brand" href="#top" aria-label="{{ idst.nav.brand.title }} home">
+    <span class="brand-mark">{{ idst.nav.brand.monogram }}</span>
+    <span class="brand-text"><b>{{ idst.nav.brand.title }}</b><span>{{ idst.nav.brand.subtitle }}</span></span>
+  </a>
+  <div class="nav-links">
+    {% for link in idst.nav.links %}
+    <a href="{{ link.href }}">{{ link.label }}</a>
+    {% endfor %}
+  </div>
+  <a class="nav-cta" href="{{ idst.nav.cta.href }}">{{ idst.nav.cta.label }}</a>
+</nav>
