@@ -17,7 +17,7 @@
       <div class="m-card reveal featured">
         <div class="m-photo">
           {% if m.badge %}<span class="m-corner">{{ m.badge }}</span>{% endif %}
-          <img src="{{ m.image }}" alt="{{ m.name }}" loading="lazy" />
+          {% image m.image, m.name, "(max-width: 768px) 50vw, 25vw" %}
         </div>
         <div class="m-meta">
           <div class="m-name">{{ m.name }}</div>
@@ -34,7 +34,7 @@
       {% for m in idst.members.current %}
       <div class="m-card reveal">
         <div class="m-photo">
-          <img src="{{ m.image }}" alt="{{ m.name }}" loading="lazy" />
+          {% image m.image, m.name, "(max-width: 768px) 50vw, 25vw" %}
         </div>
         <div class="m-meta">
           <div class="m-name">{{ m.name }}</div>
@@ -51,7 +51,7 @@
       {% for m in idst.members.alumni %}
       <div class="m-card reveal">
         <div class="m-photo">
-          <img src="{{ m.image }}" alt="{{ m.name }}" loading="lazy" />
+          {% image m.image, m.name, "(max-width: 768px) 50vw, 25vw" %}
         </div>
         <div class="m-meta">
           <div class="m-name">{{ m.name }}</div>

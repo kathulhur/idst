@@ -1,7 +1,7 @@
 <header class="hero" id="top">
   <div class="hero-photo">
     <div class="ken" style="position:absolute;inset:0">
-      <img src="{{ idst.hero.image }}" alt="{{ idst.site.fullName }}" />
+      {% image idst.hero.image, idst.site.fullName, "100vw", "eager" %}
     </div>
   </div>
   <div class="hero-vignette"></div>
@@ -18,7 +18,7 @@
 
   <div class="hero-inner">
     <div class="hero-medallion reveal-zoom in">
-      <img src="{{ idst.hero.medallionImage }}" alt="{{ idst.site.fullName }}" />
+      {% image idst.hero.medallionImage, idst.site.fullName, "120px", "eager" %}
     </div>
     <div class="hero-est reveal in">{{ idst.hero.establishedLine }}</div>
     <span class="hero-rule"></span>

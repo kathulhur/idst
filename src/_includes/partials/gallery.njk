@@ -5,7 +5,7 @@
   </div>
   <div class="gallery-grid">
     {% for img in idst.gallery.images %}
-    <img class="{{ img.size | galClass }}" src="{{ img.image }}" alt="Gallery photo {{ loop.index }}" loading="lazy" />
+    {% image img.image, "Gallery photo " + loop.index, "(max-width: 768px) 100vw, 50vw", "lazy", img.size | galClass %}
     {% endfor %}
   </div>
 </section>

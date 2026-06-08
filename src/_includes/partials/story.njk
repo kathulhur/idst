@@ -17,7 +17,7 @@
 
   <div class="story-band">
     {% for photo in idst.story.photoBand %}
-    <img src="{{ photo.image }}" alt="{{ photo.caption }}" loading="lazy" />
+    {% image photo.image, photo.caption, "(max-width: 768px) 50vw, 33vw" %}
     {% endfor %}
   </div>
 </section>
