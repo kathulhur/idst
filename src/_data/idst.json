@@ -69,9 +69,9 @@
       }
     ],
     "photoBand": [
-      { "caption": "Early days", "image": "/assets/img/l1.png" },
-      { "caption": "On the floor", "image": "/assets/img/l2.png" },
-      { "caption": "Champions", "image": "/assets/img/l3.png" }
+      { "caption": "Early days", "image": "/assets/img/l1.jpg" },
+      { "caption": "On the floor", "image": "/assets/img/l1.jpg" },
+      { "caption": "Champions", "image": "/assets/img/l1.jpg" }
     ]
   },
   "quote": {
